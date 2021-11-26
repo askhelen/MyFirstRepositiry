@@ -1,6 +1,5 @@
 public class RimNumber {
     public static int parseRimNumber(String rim) throws Exception {
-        ггг
 
         if (rim.equals("I")) {
             return 1;
