@@ -6,7 +6,7 @@ public class Calculator {
         Scanner scanner = new Scanner(System.in);
         String string = scanner.nextLine();
         String[] s1 = string.split("[0-9]");
-        if (s1.length > 2 ){
+        if (s1.length > 2) {
             throw new Exception();
         }
         String[] s = string.split("[^A-Za-z0-9]");
@@ -38,7 +38,7 @@ public class Calculator {
             if (a < 0 || a > 10) {
                 throw new Exception();
             }
-            if (b > 0 && b <= 10) {
+            if (b < 0 || b > 10) {
                 throw new Exception();
             }
             if (string.contains("+")) {
